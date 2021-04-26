@@ -14,12 +14,11 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "main": "index.js",
-  "exports": "./dist/index.js",
   "engines": {
     "node": ">= 12"
   },
   "scripts": {
-    "build": "eslint . && tsc",
+    "build": "",
     "test": "jest"
   },
   "dependencies": {
