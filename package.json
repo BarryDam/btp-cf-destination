@@ -1,7 +1,7 @@
 {
   "name": "@alliander/btp-cf-destination",
   "description": "A package to be used as express middleware to make a connection to the connectivity service of the Cloud Foundry SAP Business Technology Platform",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "",
   "author": {
     "name": "Alliander"
