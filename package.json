@@ -13,8 +13,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "main": "dist/index.js",
-  "exports": "./dist/index.js",
+  "main": "index.js",
   "engines": {
     "node": ">= 12"
   },
