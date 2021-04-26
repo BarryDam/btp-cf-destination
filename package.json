@@ -23,7 +23,7 @@
     "test": "jest"
   },
   "dependencies": {
-	"@sap-cloud-sdk/core": "1.41.0"
+    "@sap-cloud-sdk/core": "1.41.0"
   },
   "devDependencies": {
     "@types/jest": "^26.0.22",
