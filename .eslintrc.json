@@ -1,0 +1,34 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "commonjs": true,
+    "es2020": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "prettier/@typescript-eslint",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
+  ],
+  "ignorePatterns": ["dist/", "check_package_version.js"],
+  "rules": {
+    "@typescript-eslint/no-empty-function": "warn",
+    "@typescript-eslint/no-this-alias": "warn",
+    "@typescript-eslint/array-type": ["warn", { "default": "generic" }],
+    "import/order": [
+      "warn",
+      {
+        "newlines-between": "always",
+        "alphabetize": { "order": "asc", "caseInsensitive": true }
+      }
+    ],
+    "import/no-unresolved": "off",
+    "import/newline-after-import": ["error", { "count": 1 }],
+    "import/no-mutable-exports": "error"
+  }
+}

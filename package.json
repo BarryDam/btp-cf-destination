@@ -1,0 +1,39 @@
+{
+  "name": "@alliander/template-node-package",
+  "description": "",
+  "version": "0.0.2",
+  "homepage": "",
+  "author": {
+    "name": "Alliander"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alliander/template-node-package.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "main": "dist/index.js",
+  "exports": "./dist/index.js",
+  "engines": {
+    "node": ">= 12"
+  },
+  "scripts": {
+    "build": "eslint . && tsc",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "@typescript-eslint/eslint-plugin": "^4.14.1",
+    "@typescript-eslint/parser": "^4.14.1",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.5.4",
+    "typescript": "^4.2.4"
+  },
+  "keywords": []
+}
