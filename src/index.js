@@ -66,43 +66,32 @@ class BtpCfDestination {
 	
 	async create(sPath, mData) {
 		if (!sPath) { throw "Path is not defined"; }
-		const mResult = await this.request(sPath, {
+		return this.request(sPath, {
 			method	: "POST",
 			data	: mData
 		});
-		return mResult.data.data || mResult.data;
 	}
 	
 	async read(sPath) {
 		if (!sPath) { throw "Path is not defined"; }
-		let mResult = await this.request(sPath, {
+		return this.request(sPath, {
 			method	: "GET"
 		});
-		mResult = mResult.data || mResult;
-		if (typeof mResult !== "object" || mResult === null) { return mResult; }
-		if ("error" in mResult) {
-			throw mResult.error;
-		}
-		if ("results" in mResult) { return mResult.results; }
-		if ("data" in mResult) { return mResult.data; }
-		return mResult;
 	}
 	
 	async update(sPath, mData) {
 		if (!sPath) { throw "Path is not defined"; }
-		const mResult = await this.request(sPath, {
+		return this.request(sPath, {
 			method	: "PUT",
 			data	: mData
 		});
-		return mResult.data || mResult;
 	}
 	
 	async delete(sPath) {
 		if (!sPath) { throw "Path is not defined"; }
-		const mResult = await this.request(sPath, {
+		return this.request(sPath, {
 			method	: "DELETE"
 		});
-		return mResult.data;
 	}
 	
 	/**
