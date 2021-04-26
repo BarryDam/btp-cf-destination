@@ -1,4 +1,4 @@
-"use strict"
+'use strict';
 const { getDestination, executeHttpRequest} = require('@sap-cloud-sdk/core'),
 	expressWrap = fn => (...args) => fn(...args).catch(args[2]);
 
