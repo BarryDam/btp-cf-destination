@@ -12,7 +12,6 @@ class BtpCfDestination {
 	constructor(destination, { path = "/" } = {}) {
 		if (!destination) { throw new Error("Destination is required"); }
 		if (typeof destination !== "string") {
-			console.log(destination);
 			throw new Error(`Destination param is a ${typeof destination} but should be a string`);
 		}
 		this._destination = destination;

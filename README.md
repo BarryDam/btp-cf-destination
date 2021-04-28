@@ -37,10 +37,9 @@ The best practice is to first create a module in which you define the destinatio
 ```js
 const BtpCfDestination = require("@alliander/btp-cf-destination");
 module.exports = new BtpCfDestination(
-"my-dest", // the destination name defined in the SAP BTP Cockpit destination configuration instance
-{ // optional params
-	path : '/path/to/services.xsodata' 
-});
+	"my-dest", // the destination name defined in the SAP BTP Cockpit destination configuration instance
+	{ path : '/path/to/services.xsodata' } // optional params
+);
 ```
 
 ### use as express middleware
