@@ -22,7 +22,7 @@ applications:
 ```
 
 ## Usage examples
-First in the SAP BTP Cockpit we have created a destination with the following settings:
+First in the SAP BTP Cockpit create a destination, for example:
 ```
 name: my-dest
 type: HTTP
