@@ -53,7 +53,7 @@ class BtpCfDestination {
 			userJwt,
 			enableCircuitBreaker: false // prevents memory leaks
 		});
-		oDestination.url += `${this._path}${url.startsWith("/") ? url : `/${url}`}`;
+		oDestination.url += (url) ? `${this._path}${url.startsWith("/") ? url : `/${url}`}` : this._path;
 		// Proxy (needed for the SAP Business Application Studio)
 		if ("HTTP_PROXY" in process.env && oDestination.proxyType === "OnPremise") {
 			const aProxy = process.env.HTTP_PROXY.split(":");
