@@ -1,4 +1,4 @@
-# Alliander BTP-CF-DESTINATION
+# BTP-CF-DESTINATION
 This package can be used to make a connection to the connectivity service of the SAP Business Technology Platform (BTP / SCP).
 The destination service is being used to retrieve the connectivity data. The @sap-cloud-sdk/core package (which uses Axios) is being used as http client.
 
@@ -35,7 +35,7 @@ AuthentiCation: BasicAuthentication
 ### Create a module
 The best practice is to first create a module in which you define the destination, for example place it in a /modules/mydestination/index.js file
 ```js
-const BtpCfDestination = require("@alliander/btp-cf-destination");
+const BtpCfDestination = require("btp-cf-destination");
 module.exports = new BtpCfDestination(
 	"my-dest", // the destination name defined in the SAP BTP Cockpit destination configuration instance
 	{ path : '/path/to/services.xsodata' } // optional params
